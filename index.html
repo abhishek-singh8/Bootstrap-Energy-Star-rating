@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title></title>
+		<meta name="description" content="">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+		<!-- Fav icon -->
+		<link rel="shortcut icon" href="images/icon.png" type="image/png" >
+		
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+		
+	</head>
+	<body>
+	
+	  <div class="container"  id="main">
+	  	<div class="navbar navbar-fixed-top">
+	  		<div class="container">
+	  			<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+	  				<span class="icon-bar"></span>
+	  			    <span class="icon-bar"></span>
+	  			    <span class="icon-bar"></span>
+	  		    </button>
+	  			<a class="navbar-brand" href="/"><img src="images/energystar.jpg" alt="Your logo"></a>
+	  			<div class="nav-collapse collapse navbar-responsive-collapse">
+	  				<ul class="nav navbar-nav ">
+	  					<li class="active">
+	  						<a href="#">Home</a>
+	  					</li>
+	  					<li class="dropdown">
+	  						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Info<strong class="caret"></strong></a>
+
+	  						<ul class="dropdown-menu">
+	  							<li>
+	  								<a href="#">Benefits</a>
+	  							</li>
+	  							<li>
+	  								<a href="#">Consumption</a>
+	  							</li>
+	  							<li>
+	  								<a href="#">Initial cost</a>
+	  							</li>
+	  							<li class="divider"></li>
+	  							<li class="dropdown-header">Latent Benefits</li>
+	  							<li>
+	  								<a href="#">Cost/unit</a>
+	  							</li>
+	  							<li>
+	  								<a href="#">State taxes</a>
+	  							</li>
+	  						</ul>
+	  					</li>	
+	  				</ul>
+	  				<form class="navbar-form pull-left">
+	  					<input type="text" class="form-control" placeholder="Search in this site" id="searchInput">
+	  					<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span>
+	  					</button>
+	  			    </form>
+	  			    <ul class="nav navbar-nav pull-right">
+	  			    	<li class="dropdown">
+	  			    		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>My Account<strong class="caret"></strong></a>
+	  			    		<ul class="dropdown-menu">
+	  			    			<li>
+	  			    				<a href="#"><span class="glyphicon glyphicon-wrench">Settings</a>
+	  			    			</li>
+	  			    			<li>
+	  			    				<a href="#"><span class="glyphicon glyphicon-refresh">Update Profile</a>
+	  			    			</li>
+	  			    			<li>
+	  			    				<a href="#"><span class="glyphicon glyphicon-briefcase">Billings</a>
+	  			    			</li>
+	  			    			<li class="divider">
+	  			    			</li>
+	  			    			<li>
+	  			    				<a href="#"><span class="glyphicon glyphicon-off">Sign out</a>
+	  			    			</li>
+	  			    		</ul>
+	  			    	</li>
+	  			    </ul>
+	  			</div>
+	  		</div>
+	  	</div><!--end of navbar -->
+	  	<div class="carousel slide" id="mycarousel">
+
+	  		<!--Indicator starts -->
+	  		<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#mycarousel"></li>
+				<li data-slide-to="1" data-target="#mycarousel"></li>
+				<li data-slide-to="2" data-target="#mycarousel"></li>
+				<li data-slide-to="3" data-target="#mycarousel"></li>
+			</ol><!--End of inidicator-->
+
+	  		<!--wrapper for slides-->
+  			<div class="carousel-inner">
+  				<div class="item active" id="slide1">
+					<div class="carousel-caption">
+						<h4>Energy Star Ratings</h4>
+						<p>Latent benefits of investing more on higher rated products!</p>
+					</div><!-- end carousel-caption-->
+				</div>
+  				
+  				<div class="item" id="slide2">
+  				     <div class="carousel-caption">
+  						<h4>Higher rated products</h4>
+  						<p>Higher rated products consumes 30% less energy as compared to lower rated</p>
+  					</div>
+  				</div>
+  					
+  				<div class="item" id="slide3">
+  			  			<div class="carousel-caption">
+  						<h4>Modal's efficiency</h4>
+  						<p>Amount of cooling capacity (output) per unit of energy it consumes (input)</p>
+  					</div>
+  				</div>
+  				<div class="item" id="slide4">
+  			
+  					<div class="carousel-caption">
+  						<h4>ENERGY STAR certification</h4>
+  						<p>ENERGY STAR certified buildings and plants meet strict energy performance standards set by EPA.</p>
+  					</div>
+  				</div>
+  			</div><!-- End of wrapper for carousel slide -->
+
+  			<a class="left carousel-control" data-slide="prev" href="#mycarousel"><span class="icon-prev"></span></a>
+  			<a class="right carousel-control" data-slide="next" href="#mycarousel"><span class="icon-next"></span></a>
+	  	</div><!-- end of carousel -->
+
+
+		  	<div class="row jumbotron" id="jumbotron">
+		  		<div class="col-12">
+		  			<div class="alert alert-success alert-block fade in" id="successAlert">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>
+				        <h4>Comparisions!</h4>
+						<p>A 3-star AC is one that has an Energy Efficiency Ratio (EER) of 2.9 to 3.09, while a 5-star AC has an EER of 3.3 and above. This difference means that a 3-star AC would cost you approximately INR 580 per month in electricity charges, while a 5-star AC of equivalent capacity would cost you around INR 500 for the same period. This means that the 5-star AC is actually cheaper in the long run.</p>
+			        </div><!-- end alert -->
+		  			<!-- Visible only on small devices -->
+					<div class="well well-small visible-sm">
+						<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Give us a call!</a>
+					</div><!-- end well-small -->
+		  			<div class="well">
+						<div class="page-header">
+							<h2>ENERGY STAR products<small>  Got to know more about energy rated products.</small></h2>
+						</div><!-- end page-header -->
+				
+				    <p class="lead">ENERGY STAR is the simple choice for energy efficiency, making it easy for consumers and businesses to purchase products that save them money and protect the environment. EPA ensures that each product that earns the label is independently certified to deliver the quality, performance, and savings that consumers have come to expect. It’s that integrity that led Americans to purchase more than 300 million ENERGY STAR certified products in 2016, with a market value of more than $100 billion.  In fact, an average of 800,000 ENERGY STAR certified products were sold every day in 2016, bringing the total to more than 5.8 billion products sold since 1992.</p>
+				
+				    <a href="" class="btn btn-info btn-primary" id="alertMe">Comparision b/w rated products</a>
+			      </div>
+		  	    </div>
+		  	</div><!-- end of row jumbotron-->
+
+		  	<div class="row" id="featuresHeading">
+				<div class="col-12">
+					<h2>Energy Ratings of AC</h2>
+					<p class="lead">Star Rating System is a way of describing an ACs energy efficiency, i.e., the star rating of an AC tells you how much electrical power it takes to cool your room.</p>
+				</div><!-- end col-12 -->
+		    </div><!-- end featuresHeading -->
+
+		  	<div class="row" id="features">
+			       <div class="col-sm-4 feature">
+			        	<div class="panel">
+					        <div class="panel-heading">
+						       <h3 class="panel-title">2 Star Rated AC</h3>
+					        </div><!-- end panel-heading -->
+					        <img src="images/feature1.png" alt="2 Star" class="img-circle">
+					
+					        <p>A 3-star AC is one that has an Energy Efficiency Ratio (EER) of 2.9 to 3.09. Initial cost of purchasing is Rs.38490. Power consumption in an year is 580 unit/year</p>
+					
+					        <a href="#" target="_blank" class="btn btn-danger btn-block">3 star Power cost consumption</a>
+				        </div><!-- end panel -->
+			      </div><!-- end feature -->
+		
+		            <div class="col-sm-4 feature">
+		            	<div class="panel">
+		            		<div class="panel-heading">
+								<h3 class="panel-title">3 Star rated AC</h3>
+							</div><!-- end panel-heading -->
+							<img src="images/feature2.png" alt="3 star" class="img-circle">
+				
+							<p>A 4-star AC is one that has an Energy Efficiency Ratio (EER) of 3.09 to 3.2. Initial cost of purchasing is Rs.37000. Power consumption in an year is 550 unit/year</p>
+				
+							<a href="#" target="_blank" class="btn btn-danger btn-block">4 star Power cost consumption</a>
+						</div><!-- end panel -->
+					</div><!-- end feature -->
+		
+					<div class="col-sm-4 feature">
+						<div class="panel">
+							<div class="panel-heading">
+								<h3 class="panel-title">5 Star rated AC</h3>
+							</div><!-- end panel-heading -->
+							<img src="images/feature3.png" alt="5 star" class="img-circle">
+				
+							<p>A 5-star AC is one that has an Energy Efficiency Ratio (EER) of 3.3 and above. Initial cost of purchasing is Rs.41000. Power consumption in an year is 500 unit/year</p>
+				
+							<a href="#" target="_blank" class="btn btn-danger btn-block">5 star Power cost consumption</a>
+						</div><!-- end panel -->
+					</div><!-- end feature -->
+			</div><!-- end features -->
+	  	
+	  		<div class="row" id="moreInfo">
+				<div class="col-sm-6">
+					<h3>Power Consumption of different Countries</h3>
+					<div class="tabbable">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab1" data-toggle="tab">Countries List 1</a></li>
+							<li><a href="#tab2" data-toggle="tab">Countries List 2</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<h4><span class="glyphicon glyphicon-map-marker"></span> Energy Consumption per capita <small>Countries using higher rated products</small></h4>
+								
+								<iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14395.084518836262!2d85.08289251583238!3d25.579280142918254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2a81c2e0a3ffd%3A0xe08ec2aaa2fca733!2sAnisabad%2C+Patna%2C+Bihar!5e0!3m2!1sen!2sin!4v1528183178241"></iframe>
+								<h3>Energy Production Levels</h3>
+								<p>Here is a huge discrepancy between the countries that use the most energy and the ones that use the least. Plus, the countries that produce the most energy aren’t necessarily the ones that use the most. Here is a list of the five countries that use and produce that most energy in the world..</p>
+								
+								<h4>India</h4>
+								<p>With over 1.2 billion people in the country, India is another of the most populous nations in the world. While it’s the fourth largest energy consumer in the world, it is much lower down on the list in energy use per capita. Its energy use comes mostly from the sheer number of people in India. India has been rapidly developing in recent years, with more urbanization and more people gaining access to electricity.</p>
+								<h4>USA</h4>
+								<p>The U.S. uses the most energy per capita in the world. America’s oil, coal and natural gas consumption is the most per person of any country in the world, using 21 percent of the world’s energy. While China actually uses more, it has a lot more people to provide power for. The U.S. is second in the world in energy production. President Obama signed the Paris Agreement last year in an effort to leave office with a plan to address climate change, but Donald Trump’s policies and statements have led many to believe he will only increase the U.S.’s production and consumption.</p>
+								
+							</div><!-- end tab-pane -->
+							
+							<div class="tab-pane" id="tab2">
+								<h4>China</h4>
+								<p>China is the most populous country in the world, with over 1.3 billion people. It’s a lot of people to provide power for, making China the top energy consumer in the world. Still, while the country as a whole uses the most energy, it’s not the most per capita, meaning it uses less energy per person that the United States. China’s large population plays a part in its energy usage. Its heavy reliance on manufacturing as a part of the national economy also uses a large portion of energy. China was also the top energy producer in the world in 2015.</p>
+								
+								<h4>Japan</h4>
+								<p>This island nation also uses a lot of energy. It has been neck and neck with India for the fourth spot for years. Japan’s overall usage is higher than that of both France and Germany, although the latter two each use more per capita than Japan does. Japan is also one of the world’s top energy producers.</p>
+
+								<h4>Russia</h4>
+								<p>Russia was third in the world in energy consumption in 2015, using 6 percent of the world’s energy. It is also the third largest energy producer. Russia’s cold climate and manufacturing industries account for its energy use. Although Russia is the world’s third largest consumer, it doesn’t consume nearly as much energy as the United States or China.</p>
+								
+								<hr>
+								
+								<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span> Click for a Modal Window!</a>
+								
+								<div class="modal fade" id="myModal">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button class="close" data-dismiss="modal">&times;</button>
+												
+												<h4 class="modal-title">A Modal Window</h4>
+											</div><!-- end modal-header -->
+											<div class="modal-body">
+												<h4>Text in a modal</h4>
+												
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+												
+												<h4>Popovers in a modal</h4>
+												<a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You clicked it!" data-content="I knew you would.">Don't click this button</a>
+												
+												<h4>Tooltips in a modal</h4>
+												<a href="" data-original-title="Tooltip" rel="tooltip">This link</a> should have a tooltip, and so should <a href="#" data-original-title="Woohoo!" rel="tooltip">this one</a>!
+												
+											<!--	<hr>
+											
+												 <p><small class="text-muted">PS. This form doesn't do anything. Just a heads up.</small></p>
+												
+												<form class="form-horizontal">
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputName">Name</label>
+														<div class="col-lg-10">
+															<input class="form-control" id="inputName" placeholder="Name" type="text">
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+														<div class="col-lg-10">
+															<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputMessage">Message</label>
+														<div class="col-lg-10">
+															<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+															<button class="btn btn-success pull-right" type="submit">Send!</button>
+														</div>
+													</div>
+												</form> -->
+											</div><!-- end modal-body -->
+											
+											<div class="modal-footer">
+												<button class="btn btn-default" data-dismiss="modal" type="button">Close</button> <button class="btn btn-primary" type="button">Save changes</button>
+											</div><!-- end modal-footer -->
+										</div><!-- end modal-content -->
+									</div><!-- end modal-dialog -->
+								</div><!-- end myModal -->
+								
+							</div><!-- end tab-pane -->
+						</div><!-- end tab-content -->
+					</div><!-- end tabbable -->
+				</div><!-- end col-sm-6 -->
+				
+				<div class="col-sm-6">
+					<h3>ENERGY STAR certification</h3>
+					<p>Earning the ENERGY STAR means products meet strict energy efficiency guidelines set by the US Environmental Protection Agency. By choosing ENERGY STAR certified heating and cooling equipment and taking steps to optimize its performance, you can enhance the comfort of your home while saving energy. Saving energy helps you save money on utility bills and protect our climate by helping prevent harmful carbon pollution and reducing other greenhouse gases.</p>
+					
+					<h4>Latent Benefits</h4>
+					
+					<div class="list-group">
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">Initial Investments</h4>
+							<p class="list-group-item-text">Initial cost of investment of 3 star rated AC of 1 ton is Rs 33400. and of 5 star rated AC is Rs 37500.</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">Power Consumption/year</h4>
+							<p class="list-group-item-text">Power consumption of 3 star rated AC on an average(6 hours) is Rs.12200 and of 5 star rated AC is Rs.8000 .</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">Latent cost savings</h4>
+							<p class="list-group-item-text">Initial investment difference is Rs.4100 and power cost difference per year is Rs.4200.</p>
+						</a>
+					</div><!-- list-group -->
+					
+					<h5>About Standards & Labeling Program</h5>
+					<p>The Objectives of Standards & Labeling Program is to provide the consumer an informed choice about the energy saving and thereby the cost saving potential of the marketed household and other equipment. This is expected to impact the energy savings in the medium and long run while at the same time it will position domestic industry to compete in such markets where norms for energy efficiency are mandatory. </p>
+				</div><!-- end col-sm-6 -->
+			</div><!-- end moreInfo -->
+		</div>
+
+	  <footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+					<h6>Copyright &copy; 2013 {name}</h6>
+					</div><!-- end col-sm-2 -->
+					
+					<div class="col-sm-4">
+						<h6>About Us</h6>
+						<p>The star rating of an appliance is determined from the energy consumption and size of the product. If you think of an air conditioner, for example, a model's efficiency is the amount of cooling capacity (output) per unit of energy it consumes (input).</p>
+					</div><!-- end col-sm-4 -->
+					
+					<div class="col-sm-2">
+						<h6>Navigation</h6>
+						<ul class="unstyled">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Links</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div><!-- end col-sm-2 -->
+					
+					<div class="col-sm-2">
+						<h6>Follow Us</h6>
+						<ul class="unstyled">
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Google Plus</a></li>
+						</ul>
+					</div><!-- end col-sm-2 -->
+					
+					<div class="col-sm-2">
+						<h6>Coded with <span class="glyphicon glyphicon-heart"></span> by Abhishek</h6>
+					</div><!-- end col-sm-2 -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</footer>
+
+	
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+		
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+	
+	</body>
+</html>
+
